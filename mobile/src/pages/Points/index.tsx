@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Constants from "expo-constants";
 import { Feather as Icon } from "@expo/vector-icons";
 import { useNavigation, useRoute } from "@react-navigation/native";
+import Emoji from "react-native-emoji";
 import {
   View,
   Text,
@@ -122,7 +123,9 @@ const Points = () => {
           <Icon name="arrow-left" size={20} color="#34cb79" />
         </TouchableOpacity>
 
-        <Text style={styles.title}>Bem vindo.</Text>
+        <Text style={styles.title}>
+          <Emoji name="grinning" /> Bem vindo.
+        </Text>
         <Text style={styles.description}>
           Encontre no mapa um ponto de coleta.
         </Text>
